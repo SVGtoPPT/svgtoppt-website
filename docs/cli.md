@@ -27,9 +27,11 @@
 
 ## Usage
 
-WIP
+``` bash
+svgtoppt [PATH_TO_SVG_FILE]
+```
 
-## Parameters
+## OPTIONAL Parameters
 
 ### Input
 
