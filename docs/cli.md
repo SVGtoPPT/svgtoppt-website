@@ -14,7 +14,7 @@
         If you want to install Libre Office yourself you can download it from [their website](https://www.libreoffice.org/download/download) or you can use Homebrew:
 
         ``` bash
-        brew install --cask libreoffice"
+        brew install --cask libreoffice
         ```
 
     === "Yes"
@@ -27,30 +27,32 @@
 
 ## Usage
 
+### Standard
+
 ``` bash
 svgtoppt [PATH_TO_SVG_FILE]
 ```
 
-## OPTIONAL Parameters
+### Flags
 
-### Input
+#### Input
 
 | Name | Flag | Default Value | Description |
 |--|:---:|--|--|
 | `input_svg` | `-i` | none; required input | The SVG wanting to be imported into Keynote |
 | `template_ppt` | `-t` | `~/svg-to-keynote/template.ppt` | Filepath of the template PPT |
 
-#### Examples
+##### Examples
 
-```bash
+``` bash
 # -i is required
 svgtoppt -i logo.svg
 
 # Use a custom template PPT file
-svgtoppt -i logo.svg -t ~/Document/blake_template.ppt
+svgtoppt -i logo.svg -t ~/Documents/blake_template.ppt
 ```
 
-### Output
+#### Output
 
 | Name | Flag | Default Value | Description |
 |--|--|--|--|
@@ -60,9 +62,9 @@ svgtoppt -i logo.svg -t ~/Document/blake_template.ppt
 | `force_ppt` | `-f` | `false` | `false` : creates a new, unique PPT file each time a command is run<br><br>`true` : makes it [idempotent](https://mortoray.com/2014/09/05/what-is-an-idempotent-function/); has the potential to overwrite an existing PPT file |
 | `where_to_open` | `-w` | `keynote` | Where the PPT file is opened in after it's created<br><br>**Options**<br>Don't open: `none`<br> Apple Keynote: `keynote`<br>Microsoft PowerPoint: `power`<br>Libre Office:`libre`<br>Apache OpenOffice: `oo` |
 
-#### Examples
+##### Examples
 
-```bash
+``` bash
 # -i is required
 svgtoppt -i logo.svg
 
