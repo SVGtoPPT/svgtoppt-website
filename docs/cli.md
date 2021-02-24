@@ -5,13 +5,15 @@
 !!! question "Do you have Libre Office installed?"
 
     === "No"
-        SVG to PPT can install Libre Office `7.1.0` for you. Copy-paste this command in a macOS Terminal or a terminal emulator:
+        SVG to PPT can install Libre Office `7.1.0` for you.
+
+        Copy-paste this command in macOS Terminal or a terminal emulator:
 
         ``` bash
         curl -s https://raw.githubusercontent.com/blakegearin/svg-to-ppt/main/src/install_svg_to_ppt.sh | bash -s -- -i basic
         ```
 
-        If you want to install Libre Office yourself you can download it from [their website](https://www.libreoffice.org/download/download) or you can use Homebrew:
+        If you want to install Libre Office yourself you can download it from [their website](https://www.libreoffice.org/download/download) or use Homebrew:
 
         ``` bash
         brew install --cask libreoffice
@@ -33,16 +35,14 @@
 svgtoppt [PATH_TO_SVG_FILE]
 ```
 
-### Flags
-
-#### Input
+### Input Flags
 
 | Name | Flag | Default Value | Description |
 |--|:---:|--|--|
 | `input_svg` | `-i` | none; required input | The SVG wanting to be imported into Keynote |
 | `template_ppt` | `-t` | `~/svg-to-keynote/template.ppt` | Filepath of the template PPT |
 
-##### Examples
+#### Examples
 
 ``` bash
 # -i is required
@@ -52,7 +52,7 @@ svgtoppt -i logo.svg
 svgtoppt -i logo.svg -t ~/Documents/blake_template.ppt
 ```
 
-#### Output
+### Output Flags
 
 | Name | Flag | Default Value | Description |
 |--|--|--|--|
@@ -62,7 +62,7 @@ svgtoppt -i logo.svg -t ~/Documents/blake_template.ppt
 | `force_ppt` | `-f` | `false` | `false` : creates a new, unique PPT file each time a command is run<br><br>`true` : makes it [idempotent](https://mortoray.com/2014/09/05/what-is-an-idempotent-function/); has the potential to overwrite an existing PPT file |
 | `where_to_open` | `-w` | `keynote` | Where the PPT file is opened in after it's created<br><br>**Options**<br>Don't open: `none`<br> Apple Keynote: `keynote`<br>Microsoft PowerPoint: `power`<br>Libre Office:`libre`<br>Apache OpenOffice: `oo` |
 
-##### Examples
+#### Examples
 
 ``` bash
 # -i is required
