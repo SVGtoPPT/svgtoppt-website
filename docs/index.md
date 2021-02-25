@@ -13,7 +13,7 @@
 - [x] Works in the background
 - [x] Opens the new PPT file for you when finished
 - [x] Customize how it works to fit your needs
-- [ ] Set preferences to avoid passing parameters (coming soon)
+- [x] Set preferences to avoid passing parameters
 - [ ] Bulk convert SVG files to PPT (coming soon)
 
 ## Prerequisites
