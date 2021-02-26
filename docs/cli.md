@@ -35,7 +35,7 @@
 svgtoppt [PATH_TO_SVG_FILE]
 ```
 
-### Input Flags
+### Optional Input Flags
 
 | Name | Flag | Default Value | Description |
 |--|:---:|--|--|
@@ -52,7 +52,7 @@ svgtoppt -i logo.svg
 svgtoppt -i logo.svg -t ~/Documents/blake_template.ppt
 ```
 
-### Output Flags
+### Optional Output Flags
 
 | Name | Flag | Default Value | Description |
 |--|--|--|--|

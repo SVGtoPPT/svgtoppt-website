@@ -15,7 +15,7 @@ A [scalable vector graphic](https://en.wikipedia.org/wiki/Scalable_Vector_Graphi
         Kyle Ledbetter posts [an article](https://kyleledbetter.medium.com/how-to-import-an-svg-into-powerpoint-or-keynote-8d3d70f347a7){target=_blank} outlining how to import SVG files into Keynote or Powerpoint by using a PPT file as an intermediary. [Others](https://medium.com/@chrishoman_15983/i-often-encounter-problems-with-opening-files-created-with-openoffice-and-i-found-libreoffice-a-5a72f652160f){target=_blank} noted Libre Office is more stable with less quirks.
 
     === "2021"
-        I found myself needing to transfer lots of SVG files into Keynote. To make it easier I made a crude [Alfred workflow](https://www.alfredapp.com/workflows/) to automate it. Then I was able to generalize it into a [Bash](https://www.gnu.org/software/bash/){target=_blank} script and [Libre Office macro](https://help.libreoffice.org/latest/en-US/text/shared/01/06130000.html){target=_blank}.
+        I found myself needing to transfer lots of SVG files into Keynote. To make it easier I made a crude [Alfred workflow](https://www.alfredapp.com/workflows/) to automate it. Then I was able to generalize it into a [Bash](https://www.gnu.org/software/bash/){target=_blank} script with a dynamic [Libre Office macro](https://help.libreoffice.org/latest/en-US/text/shared/01/06130000.html){target=_blank}.
 
 If you would like native support for SVG files and other vector formats, I recommend [sending Apple feedback](https://www.apple.com/feedback/keynote.html){target=_blank} and voting on [Microsoft PowerPoint suggestions](https://powerpoint.uservoice.com/){target=_blank}.
 
