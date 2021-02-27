@@ -95,7 +95,7 @@ svgtoppt -i logo.svg -w power
 
 #### Save
 
-Add the `-s` flag to save the other flags on the current request as your preferences.
+Add the `save_preferences` flag (`-s`) to save the other flags on the current request as your preferences.
 
 ``` bash
 # Saves preferences for input_svg="$PWD/logo.svg" and where_to_open="none"
@@ -103,6 +103,9 @@ svgtoppt -i logo.svg -w none -s
 
 # Want to run the same request again? With saved preferences, you don't have to pass in anything
 svgtoppt
+
+# If you want to save preferences without running a conversion, that's supported too
+svgtoppt -i logo.svg -w none -s -x
 ```
 
 !!! note
