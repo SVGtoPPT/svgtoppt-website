@@ -19,13 +19,13 @@ A [scalable vector graphic](https://en.wikipedia.org/wiki/Scalable_Vector_Graphi
 
 If you would like native support for SVG files and other vector formats, I recommend [sending Apple feedback](https://www.apple.com/feedback/keynote.html){target=_blank} and voting on [Microsoft PowerPoint suggestions](https://powerpoint.uservoice.com/){target=_blank}.
 
-:star: &nbsp;Please give [SVG to PPT a star on GitHub](https://github.com/SVGtoPPT/svgtoppt/stargazers) if you find it useful
+:star: &nbsp;Please give [svgtoppt a star on GitHub](https://github.com/SVGtoPPT/svgtoppt/stargazers) if you find it useful
 
 ## Known Issues
 
 | Issue | Resolution |
 |--|--|
-| Fonts don't transfer well from SVG to PPT to Keynote | Convert text to curves/outlines/paths when exporting your SVG |
+| Fonts don't transfer well when doing conversions from SVG to PPT to Keynote (automated or not) | Convert text to curves/outlines/paths when exporting your SVG |
 | Gradients displays fine in Libre Office but when opening the PPT file in Keynote it's gone | Recreate the gradient with Keynote's [native gradient fill](https://support.apple.com/en-us/HT210063){target=_blank} or save your content as a PDF file and drag & drop into Keynote to retain your original gradient |
 | Background rectangle displays fine in Libre Office but when opening the PPT file in Keynote the rectangle is small | Resize rectangle or use Keynote's [native background color](https://support.apple.com/en-us/HT211077){target=_blank} on your slides |  |  |
 
