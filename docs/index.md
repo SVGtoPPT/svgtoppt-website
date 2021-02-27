@@ -9,11 +9,36 @@
 
 ## Features
 
-- [x] Converts your .SVG files to .PPT
-- [x] Works in the background
-- [x] Opens the new PPT file for you when finished
-- [x] Customize how it works to fit your workflow
-- [ ] Bulk convert SVG files to PPT (coming soon)
+<ul class="task-list">
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" disabled checked="">
+      <span class="task-list-indicator"></span>
+    </label>
+    Works in the background
+  </li>
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" disabled checked="">
+      <span class="task-list-indicator"></span>
+    </label>
+    Opens the new PPT file for you when finished
+  </li>
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" disabled checked="">
+      <span class="task-list-indicator"></span>
+    </label>
+    Customize how it works to fit your workflow
+  </li>
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" disabled>
+      <span class="task-list-indicator"></span>
+    </label>
+    Bulk convert SVG files to PPT (coming soon)
+  </li>
+</ul>
 
 ## Prerequisites
 

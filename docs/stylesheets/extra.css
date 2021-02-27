@@ -44,3 +44,7 @@
   display: table;
   clear: both;
 }
+
+.task-list-control input[type="checkbox"]:checked + .task-list-indicator::before {
+  background-color: var(--md-accent-fg-color);
+}

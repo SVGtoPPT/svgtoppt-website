@@ -53,12 +53,12 @@ If the standard configuration doesn't fit your workflow, that's ok! You can use 
 
 | Name | Flag | Default Value | Description |
 |--|:---:|--|--|
-| `input_svg` | `-i` | none; required input | Filepath of the SVG file to be converted |
-| `template_ppt` | `-t` | `~/svg-to-keynote/template.ppt` | Filepath of the template PPT |
-| `output_directory` | `-o` | `~/svg-to-keynote/Output` | Filepath of the directory where PPT files are output |
-| `ppt_name` | `-p` | the name of the SVG file (e.g. `logo.svg` -> `logo.ppt`) | The name of the PPT file that is output |
-| `force_ppt` | `-f` | `false` | `false` : creates a new, unique PPT file each time a command is run<br><br>`true` : makes it [idempotent](https://mortoray.com/2014/09/05/what-is-an-idempotent-function/); has the potential to overwrite an existing PPT file |
-| `where_to_open` | `-w` | `keynote` | Where the PPT file is opened in after it's created<br><br>**Options**<br>Don't open: `none`<br> Apple Keynote: `keynote`<br>Microsoft PowerPoint: `power`<br>Libre Office:`libre`<br>Apache OpenOffice: `oo` |
+| input_svg | `-i` | none; required input | Filepath of the SVG file to be converted |
+| template_ppt | `-t` | `~/svg-to-keynote/template.ppt` | Filepath of the template PPT |
+| output_directory | `-o` | `~/svg-to-keynote/Output` | Filepath of the directory where PPT files are output |
+| ppt_name | `-p` | the name of the SVG file (e.g. `logo.svg` -> `logo.ppt`) | The name of the PPT file that is output |
+| force_ppt | `-f` | `false` | `false` : creates a new, unique PPT file each time a command is run<br><br>`true` : makes it [idempotent](https://mortoray.com/2014/09/05/what-is-an-idempotent-function/); has the potential to overwrite an existing PPT file |
+| where_to_open | `-w` | `keynote` | Where the PPT file is opened in after it's created<br><br>**Options**<br>Don't open: `none`<br> Apple Keynote: `keynote`<br>Microsoft PowerPoint: `power`<br>Libre Office: `libre`<br>Apache OpenOffice: `oo` |
 
 #### Examples
 
