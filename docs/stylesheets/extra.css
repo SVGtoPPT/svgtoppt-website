@@ -18,43 +18,29 @@
   text-align: center;
 }
 
-.one-icon > span,
-.two-icon > span
-{
-  display: inline-block;
-  width: 200px;
-}
-.one-icon img,
-.two-icon img
-{
-  width: 200px;
-  height: 200px;
+.icons img {
+  width: 60%;
   margin: 10px;
 }
 
-.two-icon > span
+.icons p
 {
-  margin-bottom: 20px;
+  margin: 0px;
 }
 
-.three-icon span {
-  display: inline-block;
-}
-.three-icon > span {
-  width: 150px;
-  margin-bottom: 30px;
-}
-.three-icon img {
-  width: 150px;
-  height: 150px;
-  margin: 10px;
+.three-column > div {
+  float: left;
+  width: 33.33%;
 }
 
-@media only screen and (min-width: 768px) {
-  .two-icon  > span {
-    margin: 0 50px 0 0;
-  }
-  .three-icon > span {
-    margin: 0 50px 0 0;
-  }
+.two-column > div {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }

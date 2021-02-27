@@ -2,19 +2,40 @@
 
 ## Prerequisites
 
-<div class="one-icon center">
-  <span>
+<div class="row center icons three-column">
+  <div>
+    <a target="_blank" href="https://www.apple.com/macos">
+      <p>
+        macOS
+      </p>
+      <img src="/img/mac-os-icon.svg" alt="macOS icon" title="macOS icon"/>
+    </a>
+    <p>Primarily tested with <code>10.15.7</code> (Catalina)</p>
+  </div>
+  <div>
     <a target="_blank" href="https://www.alfredapp.com/powerpack">
       Alfred Powerpack
-      <img src="../img/alfred-icon.svg" class="center" alt="Alfred icon" title="Alfred icon"/>
+      <img src="/img/alfred-icon.svg" class="center" alt="Alfred icon" title="Alfred icon"/>
     </a>
-    <span>Primarily tested with <code>4.3.1</code></span>
-  </span>
+    <p>Primarily tested with <code>4.3.2</code></p>
+    <br>
+    <p>£29 for single license</p>
+    <p>£49 for mega supporter</p>
+  </div>
+  <div>
+    <a target="_blank" href="https://www.libreoffice.org/download/download">
+      <p>
+        Libre Office
+      </p>
+      <img src="/img/libre-office-icon.svg" alt="macOS icon" title="macOS icon"/>
+    </a>
+    <p>Primarily tested with <code>7.0.4.2</code> and <code>7.1.0</code></p>
+    <br>
+  </div>
 </div>
 
-- Current prices:
-    - £29 for single license
-    - £49 for mega supporter (free lifetime upgrades)
+!!! note
+    If you don't have Libre Office installed, svgtoppt can install `7.1.0` for you&nbsp; :slightly_smiling_face:
 
 ## Getting Started
 
