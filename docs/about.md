@@ -19,7 +19,7 @@ A [scalable vector graphic](https://en.wikipedia.org/wiki/Scalable_Vector_Graphi
 
 If you would like native support for SVG files and other vector formats, I recommend [sending Apple feedback](https://www.apple.com/feedback/keynote.html){target=_blank} and voting on [Microsoft PowerPoint suggestions](https://powerpoint.uservoice.com/){target=_blank}.
 
-:star: &nbsp;Please give [SVG to PPT a star on GitHub](https://github.com/blakegearin/svg-to-ppt/stargazers) if you find it useful
+:star: &nbsp;Please give [SVG to PPT a star on GitHub](https://github.com/SVGtoPPT/svgtoppt/stargazers) if you find it useful
 
 ## Known Issues
 

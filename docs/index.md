@@ -1,6 +1,6 @@
 <div class="center">
   <h1>
-    <img id="app-logo" src="img/svg-to-ppt-logo.svg" alt="SVG to PPT logo" title="SVG to PPT logo"/>
+    <img id="app-logo" src="img/svgtoppt-logo.svg" alt="SVG to PPT logo" title="SVG to PPT logo"/>
   </h1>
   <p id="tagline">
     Quickly move your vectors into Keynote or PowerPoint
@@ -35,7 +35,7 @@
 </div>
 
 !!! note
-    If you don't have Libre Office installed, SVG to PPT can install `7.1.0` for you&nbsp; :slightly_smiling_face:
+    If you don't have Libre Office installed, SVGtoPPT can install `7.1.0` for you&nbsp; :slightly_smiling_face:
 
 ## Ways To Use
 

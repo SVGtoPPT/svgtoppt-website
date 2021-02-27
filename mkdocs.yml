@@ -1,11 +1,11 @@
 # Project information
-site_name: 'SVG to PPT'
-site_description: 'Official homepage of SVG to PPT'
-site_url: 'https://blakegearin.github.io/svg-to-ppt'
+site_name: 'SVGtoPPT'
+site_description: 'Official homepage of SVGtoPPT'
+site_url: 'https://svgtoppt.github.io/svgtoppt-website/'
 
 # Repository
-repo_name: blakegearin/svg-to-ppt
-repo_url: https://github.com/blakegearin/svg-to-ppt
+repo_name: SVGtoPPT/svgtoppt
+repo_url: https://github.com/SVGtoPPT/svgtoppt
 edit_uri: ''
 
 nav:
@@ -28,8 +28,8 @@ extra:
 theme:
   name: 'material'
   custom_dir: 'theme'
-  logo: 'img/svg-to-ppt-icon-transparent.svg'
-  favicon: 'img/svg-to-ppt-icon.svg'
+  logo: 'img/svgtoppt-icon-transparent.svg'
+  favicon: 'img/svgtoppt-icon.svg'
   icon:
     repo: fontawesome/brands/github
   features:

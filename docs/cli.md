@@ -12,7 +12,7 @@ Install via command line by using [macOS Terminal](https://en.wikipedia.org/wiki
         Install command:
 
         ``` bash
-        version="latest"; curl -s "https://raw.githubusercontent.com/SVGtoPPT/svg-to-ppt/$version/src/install_svgtoppt.sh" | bash -s -- -i complete
+        version="latest"; curl -s "https://raw.githubusercontent.com/SVGtoPPT/svgtoppt/$version/src/install_svgtoppt.sh" | bash -s -- -i complete
         ```
 
         If you want to install Libre Office yourself you can download it from [their website](https://www.libreoffice.org/download/download) or use Homebrew:
@@ -26,7 +26,7 @@ Install via command line by using [macOS Terminal](https://en.wikipedia.org/wiki
         Install command:
 
         ``` bash
-        version="latest"; curl -s "https://raw.githubusercontent.com/SVGtoPPT/svg-to-ppt/$version/src/install_svgtoppt.sh" | bash -s -- -i basic
+        version="latest"; curl -s "https://raw.githubusercontent.com/SVGtoPPT/svgtoppt/$version/src/install_svgtoppt.sh" | bash -s -- -i basic
         ```
 
 ## Usage
