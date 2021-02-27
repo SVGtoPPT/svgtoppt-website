@@ -37,7 +37,7 @@ svgtoppt [PATH_TO_SVG_FILE]
 
 If the standard configuration doesn't fit your workflow, that's ok! You can use flags to specify single-use functionality or change the defaults permanently via preferences.
 
-## Flags
+### Flags
 
 | Name | Flag | Default Value | Description |
 |--|:---:|--|--|
@@ -48,7 +48,7 @@ If the standard configuration doesn't fit your workflow, that's ok! You can use 
 | `force_ppt` | `-f` | `false` | `false` : creates a new, unique PPT file each time a command is run<br><br>`true` : makes it [idempotent](https://mortoray.com/2014/09/05/what-is-an-idempotent-function/); has the potential to overwrite an existing PPT file |
 | `where_to_open` | `-w` | `keynote` | Where the PPT file is opened in after it's created<br><br>**Options**<br>Don't open: `none`<br> Apple Keynote: `keynote`<br>Microsoft PowerPoint: `power`<br>Libre Office:`libre`<br>Apache OpenOffice: `oo` |
 
-### Examples
+#### Examples
 
 ``` bash
 # -i is required
@@ -65,12 +65,12 @@ svgtoppt -i logo.svg -o ~/Desktop
 
 # By default the output would be logo.ppt; here we can give it another name
 svgtoppt -i logo.svg -p amazing_logo
-# Works with or without .ppt
+# The -p flag works with or without ".ppt"
 svgtoppt -i logo.svg -p amazing_logo.ppt
 
-# This command ran twice creates 2 files: logo.ppt and logo-1.ppt
+# This request ran twice creates 2 files: logo.ppt and logo-1.ppt
 svgtoppt -i logo.svg -f false
-# This command ran twice creates 1 file (logo.ppt) that gets overwritten once
+# This request ran twice creates 1 file (logo.ppt) that gets overwritten once
 svgtoppt -i logo.svg -f true
 
 # Creates the PPT file without opening it
@@ -93,11 +93,13 @@ svgtoppt -i logo.svg -w none -s
 svgtoppt
 ```
 
-`input_svg` is also saved, but if you pass in something else it receives higher priority and the preference won't be used. The same goes for all preferences; they're functionally ignored if your request explicitly includes the corresponding flags.
+!!! note
+
+    The SVG file (`input_svg` or `-i`) is also saved, but if you pass in a different SVG file it receives higher priority and the preference won't be used. The same goes for all preferences; they're functionally ignored if your request explicitly includes the corresponding flags.
 
 #### Reset
 
-You can easily reset your preferences to the defaults listed above.
+You can easily reset all your preferences back to the defaults listed above.
 
 ``` bash
 svgtoppt reset_pref
