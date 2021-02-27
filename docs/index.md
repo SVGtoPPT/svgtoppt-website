@@ -12,8 +12,7 @@
 - [x] Converts your .SVG files to .PPT
 - [x] Works in the background
 - [x] Opens the new PPT file for you when finished
-- [x] Customize how it works to fit your needs
-- [x] Set preferences to avoid passing parameters
+- [x] Customize how it works to fit your workflow
 - [ ] Bulk convert SVG files to PPT (coming soon)
 
 ## Prerequisites

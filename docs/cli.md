@@ -2,15 +2,17 @@
 
 ## Installing
 
+Install via command line by using [macOS Terminal](https://en.wikipedia.org/wiki/Terminal_(macOS)) or a terminal emulator. Below you'll find commands for the latest version, but feel free to change "latest" to whichever version you want.
+
 !!! question "Do you have Libre Office installed?"
 
     === "No"
         SVG to PPT can install Libre Office `7.1.0` for you.
 
-        Copy-paste this command in macOS Terminal or a terminal emulator:
+        Install command:
 
         ``` bash
-        curl -s https://raw.githubusercontent.com/blakegearin/svg-to-ppt/main/src/install_svg_to_ppt.sh | bash -s -- -i basic
+        version="latest"; curl -s "https://raw.githubusercontent.com/SVGtoPPT/svg-to-ppt/$version/src/install_svgtoppt.sh" | bash -s -- -i complete
         ```
 
         If you want to install Libre Office yourself you can download it from [their website](https://www.libreoffice.org/download/download) or use Homebrew:
@@ -21,16 +23,26 @@
 
     === "Yes"
 
-        Copy-paste this command in a macOS Terminal or a terminal emulator:
+        Install command:
 
         ``` bash
-        curl -s https://raw.githubusercontent.com/blakegearin/svg-to-ppt/main/src/install_svg_to_ppt.sh | bash -s -- -i complete
+        version="latest"; curl -s "https://raw.githubusercontent.com/SVGtoPPT/svg-to-ppt/$version/src/install_svgtoppt.sh" | bash -s -- -i basic
         ```
 
 ## Usage
 
 ``` bash
 svgtoppt [PATH_TO_SVG_FILE]
+```
+
+### Examples
+
+``` bash
+svgtoppt ~/Desktop/logo.svg
+
+# The entire path isn't required if the SVG file is in your current working directory
+cd ~/Desktop
+svgtoppt logo.svg
 ```
 
 ## Customization
@@ -41,7 +53,7 @@ If the standard configuration doesn't fit your workflow, that's ok! You can use 
 
 | Name | Flag | Default Value | Description |
 |--|:---:|--|--|
-| `input_svg` | `-i` | none; required input | The SVG wanting to be imported into Keynote |
+| `input_svg` | `-i` | none; required input | Filepath of the SVG file to be converted |
 | `template_ppt` | `-t` | `~/svg-to-keynote/template.ppt` | Filepath of the template PPT |
 | `output_directory` | `-o` | `~/svg-to-keynote/Output` | Filepath of the directory where PPT files are output |
 | `ppt_name` | `-p` | the name of the SVG file (e.g. `logo.svg` -> `logo.ppt`) | The name of the PPT file that is output |
@@ -51,14 +63,14 @@ If the standard configuration doesn't fit your workflow, that's ok! You can use 
 #### Examples
 
 ``` bash
-# -i is required
+# The -i flag is required in all requests
+svgtoppt -i ~/Desktop/logo.svg
+# The entire path isn't required if the SVG file is in your current working directory
+cd ~/Desktop
 svgtoppt -i logo.svg
 
 # Use a custom template PPT file
 svgtoppt -i logo.svg -t ~/Documents/blake_template.ppt
-
-# -i is required
-svgtoppt -i logo.svg
 
 # Save all your new PPT files to your desktop for easy access
 svgtoppt -i logo.svg -o ~/Desktop
