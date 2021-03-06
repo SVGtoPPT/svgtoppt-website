@@ -7,7 +7,7 @@ Install via command line by using [macOS Terminal](https://en.wikipedia.org/wiki
 !!! question "Do you have Libre Office installed?"
 
     === "No"
-        SVG to PPT can install Libre Office `7.1.0` for you.
+        SVGtoPPT can install Libre Office `7.1.0` for you.
 
         Install command:
 
@@ -59,6 +59,7 @@ If the standard configuration doesn't fit your workflow, that's ok! You can use 
 | ppt_name | `-p` | the name of the SVG file (e.g. `logo.svg` -> `logo.ppt`) | The name of the PPT file that is output |
 | force_ppt | `-f` | `false` | `false` : creates a new, unique PPT file each time a command is run<br><br>`true` : makes it [idempotent](https://mortoray.com/2014/09/05/what-is-an-idempotent-function/); has the potential to overwrite an existing PPT file |
 | where_to_open | `-w` | `keynote` | Where the PPT file is opened in after it's created<br><br>**Options**<br>Don't open: `none`<br> Apple Keynote: `keynote`<br>Microsoft PowerPoint: `power`<br>Libre Office: `libre`<br>Apache OpenOffice: `oo` |
+| quiet | `-q` | `false` | Quiet mode to prevent output |
 
 #### Examples
 
@@ -89,6 +90,9 @@ svgtoppt -i logo.svg -f true
 svgtoppt -i logo.svg -w none
 # Creates the PPT file and opens it in Microsoft PowerPoint
 svgtoppt -i logo.svg -w power
+
+# Request will work silently without output unless there's a failure/error
+svgtoppt -i logo.svg -q
 ```
 
 ### Preferences

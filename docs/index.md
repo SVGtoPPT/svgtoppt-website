@@ -1,6 +1,6 @@
 <div class="center">
   <h1>
-    <img id="app-logo" src="/img/svgtoppt-logo.svg" alt="SVG to PPT logo" title="SVG to PPT logo"/>
+    <img id="app-logo" src="/img/svgtoppt-logo.svg" alt="SVGtoPPT logo" title="SVGtoPPT logo"/>
   </h1>
   <p id="tagline">
     Quickly move your vectors into Keynote or PowerPoint
