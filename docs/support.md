@@ -1,13 +1,12 @@
 # Support
 
-If you have a GitHub account, feel free to open an issue directly on [svgtoppt](https://github.com/SVGtoPPT/svgtoppt/issues){target=_blank class=underline} or the [Alfred workflow](https://github.com/SVGtoPPT/svgtoppt-alfred/issues){target=_blank class=underline}.
+Send comments, questions, or feedback using the form below.
 
-Otherwise, send comments, questions, or feedback using the form below.
+!!! question "Wanting to report a problem? Suggest a feature?"
 
-If you're wanting to report a problem or suggest a feature, make sure to check the [known bugs](https://github.com/orgs/SVGtoPPT/projects/2"){target=_blank class=underline}
-and existing [enhancement list](https://github.com/orgs/SVGtoPPT/projects/1){target=_blank class=underline} before submitting.
-<br>
-<form id="contact-form" method="post" action="https://formspree.io/f/xvovjejv">
+    Make sure to check the [known bugs](https://github.com/orgs/SVGtoPPT/projects/2"){target=_blank class=underline} and existing [enhancement list](https://github.com/orgs/SVGtoPPT/projects/1){target=_blank class=underline} before submitting. If you have a GitHub account, feel free to open an issue directly on [svgtoppt](https://github.com/SVGtoPPT/svgtoppt/issues){target=_blank class=underline} or the [Alfred workflow](https://github.com/SVGtoPPT/svgtoppt-alfred/issues){target=_blank class=underline}.
+
+<form id="contact-form" method="post" action="{{ form_action }}">
   <div>
     <label>
       Email *

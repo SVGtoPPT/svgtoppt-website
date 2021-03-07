@@ -1,3 +1,9 @@
+/* Tags */
+html
+{
+  background-color: #170402;
+}
+
 /* IDs */
 #app-logo
 {
@@ -20,7 +26,7 @@
 
 .underline
 {
-  padding-bottom: 3px;
+  padding-bottom: 2px;
   border-bottom: 2px dotted #ABD8AB;
 }
 

@@ -17,6 +17,7 @@ nav:
 
 copyright: Copyright © 2021 Blake Gearin
 extra:
+  form_action: https://formspree.io/f/xvovjejv
   search:
     tokenizer: '[\s\-\.]+'
   social:
@@ -50,6 +51,9 @@ extra_css:
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
   - javascripts/tables.js
+
+plugins:
+  - macros
 
 markdown_extensions:
   - admonition
