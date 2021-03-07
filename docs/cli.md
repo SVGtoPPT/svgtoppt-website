@@ -1,8 +1,35 @@
 # CLI
 
-## Installing
+## Prerequisites
 
-Install via command line by using [macOS Terminal](https://en.wikipedia.org/wiki/Terminal_(macOS)) or a terminal emulator. Below you'll find commands for the latest version, but feel free to change "latest" to whichever version you want.
+<div class="row center icons two-column">
+  <div>
+    <a target="_blank" href="https://www.apple.com/macos">
+      <p>
+        macOS
+      </p>
+      <img src="/img/mac-os-icon.svg" alt="macOS icon" title="macOS icon"/>
+    </a>
+    <p>Primarily tested with <code>10.15.7</code> (Catalina)</p>
+  </div>
+  <div>
+    <a target="_blank" href="https://www.libreoffice.org/download/download">
+      <p>
+        Libre Office
+      </p>
+      <img src="/img/libre-office-icon.svg" alt="macOS icon" title="macOS icon"/>
+    </a>
+    <p>Primarily tested with <code>7.0.4.2</code> and <code>7.1.0</code></p>
+    <br>
+  </div>
+</div>
+
+!!! note
+    If you don't have Libre Office installed, SVGtoPPT can install `7.1.0` for you&nbsp; :slightly_smiling_face:
+
+## Install
+
+Install via command line by using [macOS Terminal](https://en.wikipedia.org/wiki/Terminal_(macOS)){target=_blank} or a terminal emulator. Below you'll find commands for the latest version, but feel free to change "latest" to whichever version you want.
 
 !!! question "Do you have Libre Office installed?"
 
@@ -15,7 +42,7 @@ Install via command line by using [macOS Terminal](https://en.wikipedia.org/wiki
         version="latest"; curl -s "https://raw.githubusercontent.com/SVGtoPPT/svgtoppt/$version/src/install_svgtoppt.sh" | bash -s -- -i complete
         ```
 
-        If you want to install Libre Office yourself you can download it from [their website](https://www.libreoffice.org/download/download) or use Homebrew:
+        If you want to install Libre Office yourself you can download it from [their website](https://www.libreoffice.org/download/download){target=_blank} or use Homebrew:
 
         ``` bash
         brew install --cask libreoffice
@@ -31,9 +58,13 @@ Install via command line by using [macOS Terminal](https://en.wikipedia.org/wiki
 
 ## Usage
 
-``` bash
-svgtoppt [PATH_TO_SVG_FILE]
+``` sh
+$ svgtoppt [PATH_TO_SVG_FILE]
 ```
+
+1. Workflow will work in the background and open the new PPT file in Keynote when finished
+2. Select all vectors `Ctrl` + `A`
+3. Copy (`Ctrl` + `C`) and paste (`Ctrl` + `V`) shapes to other Keynote presentations
 
 ### Examples
 
@@ -56,7 +87,7 @@ If the standard configuration doesn't fit your workflow, that's ok! You can use 
 | input_svg | `-i` | none; required input | Filepath of the SVG file to be converted |
 | template_ppt | `-t` | `~/svg-to-keynote/template.ppt` | Filepath of the template PPT |
 | output_directory | `-o` | `~/svg-to-keynote/Output` | Filepath of the directory where PPT files are output |
-| ppt_name | `-p` | the name of the SVG file (e.g. `logo.svg` -> `logo.ppt`) | The name of the PPT file that is output |
+| ppt_name | `-p` | the name of the SVG file<br>(e.g. `my_logo.svg` becomes `my_logo.ppt`) | The name of the PPT file that is output |
 | force_ppt | `-f` | `false` | `false` : creates a new, unique PPT file each time a command is run<br><br>`true` : makes it [idempotent](https://mortoray.com/2014/09/05/what-is-an-idempotent-function/); has the potential to overwrite an existing PPT file |
 | where_to_open | `-w` | `keynote` | Where the PPT file is opened in after it's created<br><br>**Options**<br>Don't open: `none`<br> Apple Keynote: `keynote`<br>Microsoft PowerPoint: `power`<br>Libre Office: `libre`<br>Apache OpenOffice: `oo` |
 | quiet | `-q` | `false` | Quiet mode to prevent output |

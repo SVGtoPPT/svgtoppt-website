@@ -33,6 +33,13 @@
   </li>
   <li class="task-list-item">
     <label class="task-list-control">
+      <input type="checkbox" disabled checked="">
+      <span class="task-list-indicator"></span>
+    </label>
+    Works offline & locally with no data collection
+  </li>
+  <li class="task-list-item">
+    <label class="task-list-control">
       <input type="checkbox" disabled>
       <span class="task-list-indicator"></span>
     </label>
@@ -64,7 +71,7 @@
 </div>
 
 !!! note
-    If you don't have Libre Office installed, svgtoppt can install `7.1.0` for you&nbsp; :slightly_smiling_face:
+    If you don't have Libre Office installed, SVGtoPPT can install `7.1.0` for you&nbsp; :slightly_smiling_face:
 
 ## Ways To Use
 
