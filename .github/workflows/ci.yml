@@ -12,4 +12,5 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install git+https://github.com/squidfunk/mkdocs-material.git
+      - run: pip install mkdocs-macros-plugin
       - run: mkdocs gh-deploy --force
