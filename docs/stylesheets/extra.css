@@ -18,6 +18,12 @@
   text-align: center;
 }
 
+.underline
+{
+  padding-bottom: 3px;
+  border-bottom: 2px dotted #ABD8AB;
+}
+
 .icons img {
   width: 60%;
   margin: 10px;

@@ -12,6 +12,7 @@ nav:
   - Home: index.md
   - CLI: cli.md
   - Alfred: alfred.md
+  - Support: support.md
   - About: about.md
 
 copyright: Copyright © 2021 Blake Gearin
@@ -44,6 +45,7 @@ theme:
 
 extra_css:
   - stylesheets/colors.css
+  - stylesheets/form.css
   - stylesheets/extra.css
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js

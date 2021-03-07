@@ -29,7 +29,7 @@
 
 ## Install
 
-Install via command line by using [macOS Terminal](https://en.wikipedia.org/wiki/Terminal_(macOS)){target=_blank} or a terminal emulator. Below you'll find commands for the latest version, but feel free to change "latest" to whichever version you want.
+Install via command line by using [macOS Terminal](https://en.wikipedia.org/wiki/Terminal_(macOS)){target=_blank class=underline} or a terminal emulator. Below you'll find commands for the latest version, but feel free to change "latest" to whichever version you want.
 
 !!! question "Do you have Libre Office installed?"
 
@@ -42,7 +42,7 @@ Install via command line by using [macOS Terminal](https://en.wikipedia.org/wiki
         version="latest"; curl -s "https://raw.githubusercontent.com/SVGtoPPT/svgtoppt/$version/src/install_svgtoppt.sh" | bash -s -- -i complete
         ```
 
-        If you want to install Libre Office yourself you can download it from [their website](https://www.libreoffice.org/download/download){target=_blank} or use Homebrew:
+        If you want to install Libre Office yourself you can download it from [their website](https://www.libreoffice.org/download/download){target=_blank class=underline} or use Homebrew:
 
         ``` bash
         brew install --cask libreoffice

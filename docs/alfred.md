@@ -40,7 +40,7 @@
 ## Getting Started
 
 1. If you haven't yet, download & install Alfred with the button on [their homepage](https://www.alfredapp.com/){target=_blank}
-2. Download the [Alfred workflow file](https://github.com/SVGtoPPT/svgtoppt-alfred/blob/1.0.0/SVGtoPPT.alfredworkflow){target=_blank}
+2. Download the [Alfred workflow file](https://github.com/SVGtoPPT/svgtoppt-alfred/blob/1.0.0/SVGtoPPT.alfredworkflow){target=_blank class=underline}
 
 [Download&nbsp; :fontawesome-solid-download:](https://github.com/SVGtoPPT/svgtoppt-alfred/raw/1.0.0/SVGtoPPT.alfredworkflow){: .md-button }
 
@@ -59,9 +59,9 @@
         svgtoppt install complete
         ```
 
-        If you want to install Libre Office yourself you can download it from [their website](https://www.libreoffice.org/download/download){target=_blank} or use Homebrew:
+        If you want to install Libre Office yourself you can download it from [their website](https://www.libreoffice.org/download/download){target=_blank class=underline} or use Homebrew:
 
-        ``` bash
+        ``` bashclass=underline
         brew install --cask libreoffice
         ```
 
@@ -84,7 +84,7 @@
 
 ## Customization
 
-The workflow contains environment variables you can change. They are equivalent to the flags offered by the [CLI](/cli/#flags).
+The workflow contains environment variables you can change. They are equivalent to the flags offered by the [CLI](/cli/#flags){ class=underline }.
 
 | Name | Default Value | Description |
 |--|--|--|
