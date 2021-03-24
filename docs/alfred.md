@@ -76,7 +76,7 @@
 ## Usage
 
 1. Launch Alfred (default is `Cmd` + `Space`)
-2. Type `svg`, a space, and the name of your SVG file
+2. Type `svg`, a space, and the name of your SVG file or directory
 3. Select your file from Alfred's search results
 4. Workflow will work in the background and open the new PPT file in Keynote when finished
 5. Select all vectors `Ctrl` + `A`

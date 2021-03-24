@@ -78,81 +78,108 @@ svgtoppt logo.svg
 
 ## Customization
 
-If the standard configuration doesn't fit your workflow, that's ok! You can use flags to specify single-use functionality or change the defaults permanently via preferences.
+If the standard configuration doesn't fit your workflow, that's ok! You can use flags to specify single-use functionality or change the defaults.
 
 ### Flags
 
-| Name | Flag | Default Value | Description |
-|--|:---:|--|--|
-| input_svg | `-i` | none; required input | Filepath of the SVG file to be converted |
-| template_ppt | `-t` | `~/svg-to-keynote/template.ppt` | Filepath of the template PPT |
-| output_directory | `-o` | `~/svg-to-keynote/Output` | Filepath of the directory where PPT files are output |
-| ppt_name | `-p` | the name of the SVG file<br>(e.g. `my_logo.svg` becomes `my_logo.ppt`) | The name of the PPT file that is output |
-| force_ppt | `-f` | `false` | `false` : creates a new, unique PPT file each time a command is run<br><br>`true` : makes it [idempotent](https://mortoray.com/2014/09/05/what-is-an-idempotent-function/); has the potential to overwrite an existing PPT file |
-| where_to_open | `-w` | `keynote` | Where the PPT file is opened in after it's created<br><br>**Options**<br>Don't open: `none`<br> Apple Keynote: `keynote`<br>Microsoft PowerPoint: `power`<br>Libre Office: `libre`<br>Apache OpenOffice: `oo` |
-| quiet | `-q` | `false` | Quiet mode to prevent output |
+| Long Flag | Short Flag | Default Value | Description |
+|:--|:---:|--|--|
+| &#x2011;&#x2011;input | `-i` | none; required | Filepath of the SVG file or directory to be converted |
+| &#x2011;&#x2011;template_ppt | `-t` | `~/svg-to-keynote/template.ppt` | Filepath of the template PPT |
+| &#x2011;&#x2011;output_directory | `-o` | `~/svg-to-keynote/Output` | Filepath of the directory where PPT files are output |
+| &#x2011;&#x2011;ppt_name | `-p` | the name of the SVG file<br>(e.g. `my_logo.svg` becomes `my_logo.ppt`) | The name of the PPT file that is output |
+| &#x2011;&#x2011;force_ppt | `-f` | `false` | `false` : creates a new, unique PPT file each time a command is run<br><br>`true` : makes it [idempotent](https://mortoray.com/2014/09/05/what-is-an-idempotent-function/); has the potential to overwrite an existing PPT file |
+| &#x2011;&#x2011;where_to_open | `-w` | `keynote` | Where the PPT file is opened in after it's created<br><br>**Options**<br>Don't open: `none`<br> Apple Keynote: `keynote`<br>Microsoft PowerPoint: `power`<br>Libre Office: `libre`<br>Apache OpenOffice: `oo` |
+| &#x2011;&#x2011;quiet | `-q` | `false` | Quiet mode to prevent output |
 
 #### Examples
 
 ``` bash
 # The -i flag is required in all requests
 svgtoppt -i ~/Desktop/logo.svg
+svgtoppt --input=~/Desktop/logo.svg
+
 # The entire path isn't required if the SVG file is in your current working directory
 cd ~/Desktop
 svgtoppt -i logo.svg
+svgtoppt --input=logo.svg
+
+# Pass in a directory and the PPT file will have a slide for each SVG file found
+svgtoppt -i ~/Desktop/logos
+svgtoppt --input=~/Desktop/logos
 
 # Use a custom template PPT file
 svgtoppt -i logo.svg -t ~/Documents/blake_template.ppt
+svgtoppt --input=logo.svg --template_ppt=~/Documents/blake_template.ppt
 
 # Save all your new PPT files to your desktop for easy access
 svgtoppt -i logo.svg -o ~/Desktop
+svgtoppt --input=logo.svg --output_directory=~/Desktop
 
 # By default the output would be logo.ppt; here we can give it another name
 svgtoppt -i logo.svg -p amazing_logo
-# The -p flag works with or without ".ppt"
+svgtoppt --input=logo.svg --ppt_name=amazing_logo
+
+# The -p flag works with or without the PPT extension (".ppt")
 svgtoppt -i logo.svg -p amazing_logo.ppt
+svgtoppt --input=logo.svg --ppt_name=amazing_logo.ppt
 
 # This request ran twice creates 2 files: logo.ppt and logo-1.ppt
 svgtoppt -i logo.svg -f false
-# This request ran twice creates 1 file (logo.ppt) that gets overwritten once
+svgtoppt --input=logo.svg --force_ppt=false
+
+# This request ran twice creates 1 file (logo.ppt) that gets overwritten once (first one is not recoverable)
 svgtoppt -i logo.svg -f true
+svgtoppt --input=logo.svg --force_ppt=true
 
 # Creates the PPT file without opening it
 svgtoppt -i logo.svg -w none
+svgtoppt --input=logo.svg --where_to_open=none
+
 # Creates the PPT file and opens it in Microsoft PowerPoint
 svgtoppt -i logo.svg -w power
+svgtoppt --input=logo.svg --where_to_open=power
 
 # Request will work silently without output unless there's a failure/error
 svgtoppt -i logo.svg -q
+svgtoppt --input=logo.svg --quiet
 ```
 
-### Preferences
+### Defaults
 
 #### Save
 
-Add the `save_preferences` flag (`-s`) to save the other flags on the current request as your preferences.
+Add the `--save_def` flag (`-s`) to save the other flags on the current request as your defaults.
 
 ``` bash
-# Saves preferences for input_svg="$PWD/logo.svg" and where_to_open="none"
+# Saves defaults for input="$PWD/logo.svg" and where_to_open="none"
 svgtoppt -i logo.svg -w none -s
+svgtoppt --input=logo.svg --where_to_open=none --save_pref
 
-# Want to run the same request again? With saved preferences, you don't have to pass in anything
+# Want to run the same request again? With a saved default for input, you don't have to pass in anything
 svgtoppt
 
-# If you want to save preferences without running a conversion, that's supported too
+# If you want to save defaults without running a conversion, that's supported too
 svgtoppt -i logo.svg -w none -s -x
+svgtoppt --input=logo.svg --where_to_open=none --save_pref --stop_creations
 ```
 
 !!! note
 
-    The SVG file (`input_svg` or `-i`) is also saved, but if you pass in a different SVG file it receives higher priority and the preference won't be used. The same goes for all preferences; they're functionally ignored if your request explicitly includes the corresponding flags.
+    Explicitly passed in parameters receive higher priority than the corresponding defaults.
+
+    Example:
+    ``` bash
+    # If you have a default where_to_open=libre it gets ignored by this request and Keynote will open
+    svgtoppt --input=logo.svg --where_to_open=keynote
+    ```
 
 #### Reset
 
-You can easily reset all your preferences back to the defaults listed above.
+You can easily reset all your defaults back to the ones listed above.
 
 ``` bash
-svgtoppt reset_pref
+svgtoppt reset_def
 ```
 
 ## Notes
