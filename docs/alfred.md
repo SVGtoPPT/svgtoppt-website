@@ -40,9 +40,9 @@
 ## Getting Started
 
 1. If you haven't yet, download & install Alfred with the button on [their homepage](https://www.alfredapp.com/){target=_blank}
-2. Download the [Alfred workflow file](https://github.com/SVGtoPPT/svgtoppt-alfred/blob/1.0.0/SVGtoPPT.alfredworkflow){target=_blank class=underline}
+2. Download the [Alfred workflow file](https://github.com/SVGtoPPT/svgtoppt-alfred/blob/main/SVGtoPPT.alfredworkflow){target=_blank class=underline}
 
-[Download&nbsp; :fontawesome-solid-download:](https://github.com/SVGtoPPT/svgtoppt-alfred/raw/1.0.0/SVGtoPPT.alfredworkflow){: .md-button }
+[Download&nbsp; :fontawesome-solid-download:](https://github.com/SVGtoPPT/svgtoppt-alfred/raw/main/SVGtoPPT.alfredworkflow){: .md-button }
 
 ## Install
 
