@@ -40,10 +40,10 @@
   </li>
   <li class="task-list-item">
     <label class="task-list-control">
-      <input type="checkbox" disabled>
+      <input type="checkbox" disabled checked="">
       <span class="task-list-indicator"></span>
     </label>
-    Bulk convert SVG files to PPT (coming soon)
+    Bulk convert SVG files to a single PPT
   </li>
 </ul>
 
