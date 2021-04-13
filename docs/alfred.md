@@ -35,7 +35,7 @@
 </div>
 
 !!! note
-    If you don't have Libre Office installed, SVGtoPPT can install `7.1.0` for you&nbsp; :slightly_smiling_face:
+    If you don't have Libre Office installed, SVGtoPPT can install it for you&nbsp; :slightly_smiling_face:
 
 ## Getting Started
 
@@ -52,7 +52,7 @@
 !!! question "Do you have Libre Office installed?"
 
     === "No"
-        SVGtoPPT can install Libre Office `7.1.0` for you.
+        SVGtoPPT can install Libre Office for you.
 
         Type or copy-paste this into Alfred followed by a space and a folder where you want to install SVGtoPPT:
         ```

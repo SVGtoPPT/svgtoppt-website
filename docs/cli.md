@@ -34,7 +34,7 @@ Install via command line by using [macOS Terminal](https://en.wikipedia.org/wiki
 !!! question "Do you have Libre Office installed?"
 
     === "No"
-        SVGtoPPT can install Libre Office `7.1.0` for you.
+        SVGtoPPT can install Libre Office it for you.
 
         Install command:
 
