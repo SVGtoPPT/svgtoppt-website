@@ -36,6 +36,7 @@ theme:
   features:
     - navigation.instant
     - navigation.tabs
+    - navigation.top
   language: 'en'
   font:
     text: 'Ubuntu'
