@@ -60,3 +60,7 @@ html
 .task-list-control input[type="checkbox"]:checked + .task-list-indicator::before {
   background-color: var(--md-accent-fg-color);
 }
+
+.md-header__source {
+    margin-left: 0rem;
+}

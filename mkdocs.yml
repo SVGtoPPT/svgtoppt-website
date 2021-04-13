@@ -30,7 +30,6 @@ extra:
 theme:
   name: 'material'
   custom_dir: 'theme'
-  logo: 'img/svgtoppt-icon-transparent.svg'
   favicon: 'img/svgtoppt-icon.svg'
   icon:
     repo: fontawesome/brands/github
@@ -43,6 +42,18 @@ theme:
     code: 'Roboto Mono'
   static_templates:
     - 404.html
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
 
 extra_css:
   - stylesheets/colors.css
