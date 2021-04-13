@@ -25,7 +25,7 @@
 </div>
 
 !!! note
-    If you don't have Libre Office installed, SVGtoPPT can install `7.1.0` for you&nbsp; :slightly_smiling_face:
+    If you don't have Libre Office installed, SVGtoPPT can install it for you&nbsp; :slightly_smiling_face:
 
 ## Install
 
