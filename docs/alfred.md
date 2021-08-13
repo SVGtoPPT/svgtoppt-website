@@ -1,5 +1,7 @@
 # Alfred
 
+The SVGtoPPT CLI can be used with Alfred 4 as a workflow for quick execution. It can also be found on [Packal](http://www.packal.org/workflow/svgtoppt), a popular repository for Alfred workflows.
+
 ## Prerequisites
 
 <div class="row center icons three-column">

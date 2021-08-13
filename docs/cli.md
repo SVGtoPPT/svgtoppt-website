@@ -1,5 +1,7 @@
 # CLI
 
+CLI stands for command-line interface. It's a technical way of saying this program doesn't have an graphical interface like a website or a traditional desktop application.
+
 ## Prerequisites
 
 <div class="row center icons two-column">
