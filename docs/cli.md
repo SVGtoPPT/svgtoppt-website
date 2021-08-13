@@ -1,6 +1,6 @@
 # CLI
 
-CLI stands for command-line interface. It's a technical way of saying this program doesn't have an graphical interface like a website or a traditional desktop application.
+CLI stands for command-line interface. It's a technical way of saying this program doesn't have a graphical interface like a website or a traditional desktop application. Instead, you use a program like Apple's Terminal or another terminal emulator, such as iTerm2.
 
 ## Prerequisites
 
