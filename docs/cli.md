@@ -12,7 +12,7 @@ CLI stands for command-line interface. It's a technical way of saying this progr
       </p>
       <img src="/img/mac-os-icon.svg" alt="macOS icon" title="macOS icon"/>
     </a>
-    <p>Primarily tested with <code>10.15.7</code> (Catalina)</p>
+    <p>Tested with <code>10.15.7</code> (Catalina) to <code>12.2.1</code> (Monterey)</p>
   </div>
   <div>
     <a target="_blank" href="https://www.libreoffice.org/download/download">
@@ -21,7 +21,7 @@ CLI stands for command-line interface. It's a technical way of saying this progr
       </p>
       <img src="/img/libre-office-icon.svg" alt="macOS icon" title="macOS icon"/>
     </a>
-    <p>Primarily tested with <code>7.0.4.2</code> and <code>7.1.0</code></p>
+    <p>Tested with <code>7.0.4.2</code> to <code>7.3.1.3</code></p>
     <br>
   </div>
 </div>
