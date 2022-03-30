@@ -23,7 +23,7 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/blakegearin
-    - icon: fontawesome/solid/home
+    - icon: fontawesome/solid/house
       link: https://blakegearin.com
 
 # Configuration
