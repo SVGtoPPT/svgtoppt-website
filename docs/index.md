@@ -125,3 +125,6 @@
     <p>Primarily tested with <code>4.1.8</code></p>
   </div>
 </div>
+
+!!! info
+    All the logos on this page are vectors I made 🎨
