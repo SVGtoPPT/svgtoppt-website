@@ -62,5 +62,12 @@ html
 }
 
 .md-header__source {
-    margin-left: 0rem;
+  margin-left: 0rem;
+}
+
+
+@media screen and (min-width: 76.1875em) {
+  .md-nav__item--active {
+    display: none !important;
+  }
 }
