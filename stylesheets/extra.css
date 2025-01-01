@@ -1,0 +1,73 @@
+/* Tags */
+html
+{
+  background-color: #170402;
+}
+
+/* IDs */
+#app-logo
+{
+  width: 300px;
+  height: 300px;
+}
+
+#tagline
+{
+  font-weight: bold;
+  font-size: large;
+  color: var(--md-accent-fg-color);
+}
+
+/* Classes */
+.center
+{
+  text-align: center;
+}
+
+.underline
+{
+  padding-bottom: 2px;
+  border-bottom: 2px dotted #ABD8AB;
+}
+
+.icons img {
+  width: 60%;
+  margin: 10px;
+}
+
+.icons p
+{
+  margin: 0px;
+}
+
+.three-column > div {
+  float: left;
+  width: 33.33%;
+}
+
+.two-column > div {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.task-list-control input[type="checkbox"]:checked + .task-list-indicator::before {
+  background-color: var(--md-accent-fg-color);
+}
+
+.md-header__source {
+  margin-left: 0rem;
+}
+
+
+@media screen and (min-width: 76.1875em) {
+  .md-nav__item--active {
+    display: none !important;
+  }
+}
