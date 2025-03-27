@@ -17,7 +17,10 @@ A [scalable vector graphic](https://en.wikipedia.org/wiki/Scalable_Vector_Graphi
     === "2021"
         I found myself needing to transfer lots of SVG files into Keynote. To make it easier I made a crude [Alfred workflow](https://www.alfredapp.com/workflows/) to automate it. Then I was able to generalize it into a [Bash](https://www.gnu.org/software/bash/){target=_blank} script with a dynamic [Libre Office macro](https://help.libreoffice.org/latest/en-US/text/shared/01/06130000.html){target=_blank}.
 
-If you would like native support for SVG files and other vector formats, I recommend [sending Apple feedback](https://www.apple.com/feedback/keynote.html){target=_blank} and voting on [Microsoft PowerPoint suggestions](https://powerpoint.uservoice.com/){target=_blank}.
+    === "2023"
+        Apple releases Keynote 13.1 which includes native support for SVG files.
+
+If you would like native support for SVG files and other vector formats, I recommend voting on [Microsoft PowerPoint suggestions](https://powerpoint.uservoice.com/){target=_blank}.
 
 :star: &nbsp;Please give [svgtoppt a star on GitHub](https://github.com/SVGtoPPT/svgtoppt/stargazers) if you find it useful
 
