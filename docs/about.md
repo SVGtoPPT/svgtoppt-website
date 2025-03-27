@@ -18,7 +18,7 @@ A [scalable vector graphic](https://en.wikipedia.org/wiki/Scalable_Vector_Graphi
         I found myself needing to transfer lots of SVG files into Keynote. To make it easier I made a crude [Alfred workflow](https://www.alfredapp.com/workflows/) to automate it. Then I was able to generalize it into a [Bash](https://www.gnu.org/software/bash/){target=_blank} script with a dynamic [Libre Office macro](https://help.libreoffice.org/latest/en-US/text/shared/01/06130000.html){target=_blank}.
 
     === "2023"
-        Apple releases Keynote 13.1 which includes native support for SVG files.
+        Apple releases [Keynote 13.1](https://support.apple.com/guide/keynote/whats-new-tan700f60676/mac){target=_blank} which includes native support for SVG files.
 
 If you would like native support for SVG files and other vector formats, I recommend voting on [Microsoft PowerPoint suggestions](https://powerpoint.uservoice.com/){target=_blank}.
 
@@ -34,11 +34,11 @@ If you would like native support for SVG files and other vector formats, I recom
 
 ## Credits
 
-- Publisher of the conversion process: Kyle Ledbetter ([Twitter](https://twitter.com/kyleledbetter){target=_blank}, [Website](https://kyleledbetter.com/){target=_blank})
+- Publisher of the conversion process: Kyle Ledbetter ([Website](https://kyleledbetter.com/){target=_blank})
 - Libre Office support: [The Document Foundation](https://www.documentfoundation.org/){target=_blank} and [Libre Office contributors](https://www.libreoffice.org/community/community-map/){target=_blank}
 - Website theme: [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/){target=_blank}
-- Font in branding: [Morro by Great Scott](https://www.greatscott.se/fonts/morro){target=_blank}
-- Alfred developers: [Running with Crayons Ltd](http://runningwithcrayons.net/){target=_blank}, founded by [Andrew Pepperrell](https://twitter.com/preppeller){target=_blank} and [Vero Pepperrell](https://twitter.com/vero){target=_blank}
-- Emojis: [Twemoji](https://github.com/jdecked/twemoji#readme)
+- Font in branding: [Morro by Great Scott](https://www.greatscott.se){target=_blank}
+- Alfred developers: [Running with Crayons Ltd](http://runningwithcrayons.net/){target=_blank}
+- Emojis: [Twemoji](https://github.com/jdecked/twemoji#readme){target=_blank}
 
-    - I don't support Twitter and encourage others to use open protocols like [ActivityPub](https://activitypub.rocks/) (see: [Mastodon](https://joinmastodon.org/), [Lemmy](https://join-lemmy.org/))
+    - I don't support Twitter and encourage others to use open protocols like [ActivityPub](https://activitypub.rocks/){target=_blank} (see: [Mastodon](https://joinmastodon.org/){target=_blank}, [Lemmy](https://join-lemmy.org/){target=_blank})
