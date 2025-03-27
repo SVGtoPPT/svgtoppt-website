@@ -39,4 +39,6 @@ If you would like native support for SVG files and other vector formats, I recom
 - Website theme: [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/){target=_blank}
 - Font in branding: [Morro by Great Scott](https://www.greatscott.se/fonts/morro){target=_blank}
 - Alfred developers: [Running with Crayons Ltd](http://runningwithcrayons.net/){target=_blank}, founded by [Andrew Pepperrell](https://twitter.com/preppeller){target=_blank} and [Vero Pepperrell](https://twitter.com/vero){target=_blank}
-- Emojis: [Twemoji](https://twemoji.twitter.com/)
+- Emojis: [Twemoji](https://github.com/jdecked/twemoji#readme)
+
+  - I don't support Twitter and encourage others to use open protocols like [ActivityPub](https://activitypub.rocks/) (see: [Mastodon](https://joinmastodon.org/), [Lemmy](https://join-lemmy.org/))
